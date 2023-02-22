@@ -1,11 +1,15 @@
 {
+  "private": true,
+  "homepage": "./",  
+
   "name": "react-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "serve": "webpack server --env development --config webpack.config.js",
-    "build": "webpack --env production --config webpack.config.js"
+    "build": "webpack --env production --config webpack.config.js",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +31,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-webpack-plugin": "^4.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "sass": "^1.58.3",
@@ -43,4 +48,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
+
 }
